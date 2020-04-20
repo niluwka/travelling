@@ -1,0 +1,48 @@
+$white:#ffffff;
+$bg_footer:#737373;
+$yellow:#ffc908;
+$grey:#a8aeae;
+$black:#000000;
+$blackT:#242929;
+$red_button:#e21712;
+$blackW:#282d2d;
+$greyT:#6c7374;
+$blackH:#413f3f;
+$blue:#a9b3e3;
+$greyL:#e9e9e9;
+
+
+$fontWeight:
+('BankGothicBTLight',300),
+('DosisSemiBold',600),
+('HelveticaLTStdUltraComp',200),
+('MerriweatherLightItalic',301),
+('MyriadProBold',700),
+('MyriadProRegular',400),
+('MyriadProSemiBold',601),
+('MyriadProSemiBoldItalic',602),
+('NeotericBold',603),
+('NirmalaUIBold',604),
+('OpenSansLight',302),
+('OpenSansBold',605),
+('OstrichSansBlack',900),
+('PompiereRegular',401),
+('ZurichBlackExtendedBT',901);
+@each $font,$weight in $fontWeight {
+  @font-face {
+    font-family:'Family';
+    src: url('../fonts/Family/Family-#{$font}.ttf');
+    font-weight: $weight;
+  }
+}
+*{
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-family: 'Family';
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  // color: $white;
+}
+

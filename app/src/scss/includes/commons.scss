@@ -1,0 +1,98 @@
+// .aside{
+//   &-header{
+//     @include row(0);
+//     justify-content: space-between;
+//   align-items: center;
+//   }
+//     &-nav-logo{
+//        @include col(16,0px);
+//     }
+    // &-content{
+    //   @include col(24,0px);
+    // }
+// }
+
+.aside__nav{
+  @include row(0);
+  &-search{
+    @include col (4,0px);
+  }
+  &-logotype{
+    @include col (8,0px);
+  }
+  &-button{
+    @include col (4,0px)
+  }
+}
+.aside__nav-link{
+padding: 27px 0;
+  @include row(0);
+  justify-content: space-between;
+  align-items: center;
+
+  &__icon{
+    @include col (7,0px);
+  }
+}
+ .aside__menu{
+    @include col (17,0px);
+  }
+  .header{
+    @include row(0);
+    &__content{
+      @include col (10,0px);
+    }
+  }
+.container{
+  @include container();
+}
+.body{
+  &-section{
+    @include row(0);
+  }
+  &-me{
+    @include col(8,10px);
+  }
+  &-life{
+    @include col(8,0px);
+  }
+  &-image{
+    @include col(8,0px);
+  }
+//  &-preview{
+//         @include col(16,10px);
+//     }
+}
+h3::after{
+  content: '';
+      position: absolute;
+      width: 95px;
+      height: 2px;
+      background: #dde1f4;
+      display: flex;
+      top: 55px;
+      left: 20px;
+}
+h3::before{
+  content: '';
+      position: absolute;
+      width: 95px;
+      height: 2px;
+      background: #dde1f4;
+      display: flex;
+      top: 55px;
+      right: 20px;
+}
+
+
+
+
+
+
+
+
+// -------------------------------------------------//
+
+
+
+
