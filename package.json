@@ -20,7 +20,7 @@
     "gulp-include": "^2.4.1",
     "gulp-load-plugins": "^2.0.2",
     "gulp-sass": "^4.0.2",
-    "node-sass": "^4.13.1"
+    "node-sass": "^7.0.0"
   },
   "dependencies": {
     "gulp-print": "^5.0.2",
